@@ -42,6 +42,10 @@ print(mean_squared_error(targetY_test, irisYPrediction)) # print the mean square
 print("Varience score: ")
 print(r2_score(targetY_test, irisYPrediction)) # print variance score
 
-# now make a graph
-plt.scatter(predictorsX_test, targetY_test, color = "red")
-plt.plot(predictorsX_test, irisYPrediction, color = "black")
+# now make a graph, or not it wont work now wtf
+# targetY_test = targetY_test[:, 1:2]
+# plt.scatter(predictorsX_test, targetY_test, color = "red")
+# plt.plot(predictorsX_test, irisYPrediction, color = "black", linewidth = 3)
+# plt.xticks(())
+# plt.yticks(())
+# plt.show()
